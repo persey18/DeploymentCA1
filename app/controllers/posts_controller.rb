@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
   before_action :find_post, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, except: [:index, :show] # reroute to sign page if user isnt a member and trys to post 
   def index 
     @posts = Post.all.order("created_at DESC")
    end
@@ -9,11 +10,11 @@ class PostsController < ApplicationController
    end
    
    def new 
-     @post = Post.new
+     @post = current_user.posts.build
    end
    
    def create 
-     @post = Post.new(post_params)
+     @post = current_user.posts.build(post_params) #makes sure the user id column is filled in
      if @post.save
       redirect_to @post #redirect to post if it can be saved 
     else

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :posts
   root 'posts#index' #post controller index action 
   # The priority is based upon order of creation: first created -> highest priority.
