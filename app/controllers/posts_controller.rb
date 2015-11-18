@@ -6,7 +6,7 @@ class PostsController < ApplicationController
    end
    
    def show 
-   
+    @comments = Comment.where(post_id: @post) # find the comment associated with that post 
    end
    
    def new 
