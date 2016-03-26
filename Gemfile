@@ -1,7 +1,5 @@
 source 'https://rubygems.org'
 
-gem 'profanity'
-gem "profanity4"
 gem 'isprime'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
