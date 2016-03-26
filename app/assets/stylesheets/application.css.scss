@@ -1,0 +1,154 @@
+@import "bootstrap";
+@import "font-awesome";
+
+body {
+  padding-top: 40px;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: 100;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 100;
+}
+
+.btn-default {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.input {
+  
+  
+}
+.string.required{
+  width: 51%
+}
+.string.optional{
+  width: 51%
+}
+.email.required{
+  width: 51%
+}
+
+.email.optional{
+  width: 51%
+}
+.password.optional{
+  width: 51%
+}
+.password.required {
+  width: 51%
+}
+.password.optional {
+  
+}
+.text.optional{
+  width: 80%
+}
+
+.text.optional #post_description {
+  width: 51%
+}  
+
+
+.button {
+  padding-right: 0.7rem ;
+  border-radius: .3rem;
+  outline: none;
+  background: white;
+  color: #9B9B9B;
+  float: left;
+}
+
+header {
+  width: 100%;
+  padding: 2rem 0;
+  border-bottom: 1px solid #E4E4E4;
+}
+
+
+.navbar-default {
+  margin-bottom: 0;
+  background-color: #fff;
+  border-bottom: 0;
+ }
+.navbar-right {
+    float: right !important;
+    margin-top: -23px;
+}
+
+.div.form-inputs { 
+  float: right !important;
+    margin-top: -23px;
+  
+}
+.logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.round-image-50 {
+    margin: 5px 0 0 15px;
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+    text-align: center;
+    img { width: 100% }
+}
+
+
+.round-image-60 {
+    margin: 0 0 0 100px;
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    border-radius: 40px;
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    height: 80px;
+    width: 80px;
+    overflow: hidden;
+    text-align: center;
+    img { width: 100% }
+}
+
+.round-image-33 {
+    margin: 0 0 0 20px;
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    border-radius: 60px;
+    -moz-border-radius: 60px;
+    -webkit-border-radius: 60px;
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+    text-align: center;
+    img { width: 100% }
+}
+
+.container {
+  align: center;
+}
+
+
+@import 'home.css.scss';
+@import 'posts.css.scss';
+

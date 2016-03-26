@@ -12,6 +12,10 @@
     .wrapper.clearfix
       #logo= link_to "DjExchange", root_path
       %nav
+        = form_tag search_posts_path, method: :get, class: "navbar-form navbar-right", role: "search" do
+          %p
+            = text_field_tag :search, params[:search], class: "form-control"
+            = submit_tag "Search", name: nil, class: "btn btn-default"
         - if user_signed_in?
           = link_to current_user.name, edit_user_registration_path
           = link_to "Add New Item", new_post_path, class: "button"
@@ -22,3 +26,8 @@
   %p.alert= alert
   .wrapper
     = yield
+    - if user_signed_in?
+      Signed in as... #{current_user.email} (#{link_to 'Sign out', destroy_user_session_path, :method => :delete})
+    - else
+      = link_to 'Register', new_user_registration_path
+      or #{link_to 'Sign in', new_user_session_path}

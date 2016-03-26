@@ -1,0 +1,8 @@
+Prime Number Result<br><%= @result2 %>
+<hr>
+<h1>Enter a number to check if it is 
+Prime</h1>
+<%=form_tag "/validate2" do %>
+<%= text_field_tag :search_string2 %>
+<%= submit_tag "Search" %>
+<% end %>

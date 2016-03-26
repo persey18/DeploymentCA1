@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Profanes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Text</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @profanes.each do |profane| %>
+      <tr>
+        <td><%= profane.text %></td>
+        <td><%= link_to 'Show', profane %></td>
+        <td><%= link_to 'Edit', edit_profane_path(profane) %></td>
+        <td><%= link_to 'Destroy', profane, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Profane', new_profane_path %>

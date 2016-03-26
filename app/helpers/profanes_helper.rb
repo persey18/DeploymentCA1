@@ -1,0 +1,2 @@
+module ProfanesHelper
+end
